@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>刘鑫——个人简历</title>
+<link href="css/myfontFace.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<style>
+@keyframes hintMove{
+	0%{
+		top: 0;
+		opacity: 1;
+	}
+	25%{
+		top: -10%;
+	}
+	50%{
+		top: 0;
+		opacity: .5;
+	}
+	75%{
+		top: 10%;
+	}
+	100%{
+		top: 0;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes hintMove{
+	0%{
+		top: 0;
+		opacity: 1;
+	}
+	25%{
+		top: -10%;
+	}
+	50%{
+		top: 0;
+		opacity: .5;
+	}
+	75%{
+		top: 10%;
+	}
+	100%{
+		top: 0;
+		opacity: 1;
+	}
+}
+@keyframes hintText{
+	0%{
+		text-shadow: 0 0 2px #666;
+	}
+	50%{
+		text-shadow: 0 0 0 #666;
+	}
+	100% {
+		text-shadow: 0 0 2px #666;
+	}
+
+}
+#subCode {
+	position: absolute;
+	top: 50%;
+	left: 1%;
+	transform: translateY(-50%);
+	width: 10px;
+	z-index: 20;
+}
+#subCode span {
+	display: block;
+	margin: 2px 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #8abfe7;
+}
+#subCode .active {
+	display: block;
+	margin: 2px 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #256ba0;
+}
+#hint>div {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 20;	
+}
+#hint .scrollHint {
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+	cursor: pointer;
+} 
+#hint .scrollCont {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	animation: hintMove 1.5s infinite ease-in-out;
+}
+#hint .scrollHint p {
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	animation: hintText 1.5s infinite ease-in-out;
+	color: #dfd;
+} 
+#hint .scrollHint span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+} 
+#hint .scrollHint i {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(img/downW.png) no-repeat;
+	background-size: 100% 100%;
+	
+} 
+#hint .returnTop {
+	position: absolute;
+	right: 1%;
+	bottom: 10%;
+	overflow: hidden;
+	cursor: pointer;
+}
+#hint .returnTop i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(img/upB.png) no-repeat;
+	background-size: 100% 100%;
+	animation: hintMove 1.5s infinite ease-in-out;
+}
+</style>
+</head>
+<body class="loading screen works">
+	<!--位置、背景均可变的logo-->
+	<div class="markBg"></div>
+	<section class="wrap">
+		<div id="subCode">
+		</div>
+		<div id="hint">
+			<div class="scrollHint">
+				<div class="scrollCont">
+					<p>滚动滚轮</p>
+					<span>
+						<i></i>
+					</span>
+				</div>
+			</div>
+			<div class="returnTop">
+				<i></i>
+			</div>
+		</div>
+		<ul id="info">
+			<li class="welcome">
+				<div class="cell">
+					<div class="portrait">
+						<img  />
+					</div>
+					<h1>welcome to my house!</h1>
+				</div>
+			</li>
+			<li class="experience">
+				<div class="cell">
+					<dl>
+						<dt>优势</dt>
+						<dd>旅游</dd><dd>音乐</dd><dd>看书</dd><dd>跑步</dd>
+					</dl>
+					<dl>
+						<dt>性格</dt>
+						<dd>开朗</dd><dd>乐观</dd><dd>思维敏捷</dd><dd>沉稳</dd>
+					</dl>
+					<dl>
+						<dt>爱好</dt>
+						<dd>旅游</dd><dd>音乐</dd><dd>看书</dd><dd>跑步</dd>
+					</dl>
+				</div>
+			</li>
+			<li class="interest">
+				<div class="cell">
+					<dl>
+						<dt>优势</dt>
+						<dd>旅游</dd><dd>音乐</dd><dd>看书</dd><dd>跑步</dd>
+					</dl>
+					<dl>
+						<dt>性格</dt>
+						<dd>开朗</dd><dd>乐观</dd><dd>思维敏捷</dd><dd>沉稳</dd>
+					</dl>
+					<dl>
+						<dt>爱好</dt>
+						<dd>旅游</dd><dd>音乐</dd><dd>看书</dd><dd>跑步</dd>
+					</dl>
+				</div>
+			</li>
+			<li class="skill">
+				<div class="cell">
+					<dl>
+						<dt>专业技能概括</dt>
+						<dd>HTML</dd>
+						<dd>CSS</dd>
+						<dd>JavaScript</dd>
+						<dd>面向对象</dd>
+						<dd>HTML5</dd>
+						<dd>CSS3</dd>
+						<dd>canvas</dd>
+						<dd>GIT</dd>
+						<dd>SVN</dd>
+						<dd>gulp.js</dd>
+						<dd>jQuery</dd>
+						<dd>AngularJS</dd>
+						<dd>Vue.js</dd>
+						<dd>Bootstrap</dd>
+						<dd>Zepto</dd>
+						<dd>jQuery Mobile</dd>
+					</dl>
+				</div>
+			</li>
+			<li class="describe">
+				<div class="cell">
+					<dl>
+						<dt>找工作宣言</dt>
+						<dd>
+							<p>
+								能够接受加班,不能接受太安逸、没有理想的工作氛围,加入一个积极向上的团队是我的终极梦想!
+							</p>
+						</dd>
+					</dl>
+				</div>
+			</li>
+			<li class="add">
+				<div class="cell">
+					<h3 class="addTitle">End</h3>
+					<dl>
+						<dt>Where's Rain come from?</dt>
+						<dd>直隶总督府大保定</dd>
+					</dl>
+					<dl>
+						<dt>What's the Telephone number of Rain? </dt>
+						<dd><a href="tel:17310360285">17310360285</a></dd>
+					</dl>
+					<dl>
+						<dt>I will email to Rain!</dt>
+						<dd><a href="mailto:369857686@qq.com">3689857686@qq.com</a></dd>
+					</dl>
+				</div>
+			</li>
+		</ul>	
+	</section>
+</body>
+<script src="js/move.js"></script>
+<script src="js/index.js"></script>
+
+
+</html>

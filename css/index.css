@@ -1,0 +1,175 @@
+*{
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+	margin: 0;
+}
+ul,dl,dd,dt {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1,h2,h3,p {
+	margin: 0;
+}
+img {
+	vertical-align: top;
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	position: relative;
+	font-family: "Source Han Sans",Helvetica,Tahoma,Arial,"Hiragino Sans GB","Microsoft YaHei",SimSun,Heiti,sans-serif;
+	color: #666;
+	background:url(../img/bg.jpg) no-repeat center;
+	background-size: cover;
+}
+.markBg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,.3);
+}
+.wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	perspective: 1000px;
+}
+#info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 500%;
+}
+#info li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	display: table;
+	z-index: 0;
+	transition: opacity .8s ease;
+}
+#info li:nth-of-type(1) {
+	z-index: 10;
+}
+#info .cell {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+#info dl {
+	margin: 10px auto;
+	width: 60%;
+}
+#info dt {
+	font-size: 30px;
+	line-height: 50px;
+	color: #fff;
+}
+#info dd {
+	margin: 6px 6px;
+	padding: 0 10px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 30px;
+	background-color: #ddd;
+}
+.welcome h1 {
+	height: 100px;
+	font-size: 50px;
+	line-height: 100px;
+	font-weight: 500;
+	background-color: #4e10d9;
+	color: #fff;
+	box-shadow: 0 0 10px #666;
+}
+#info .welcome {
+	background-color: rgba(238,213,112,.6);
+}
+#info .portrait {
+	margin: 0 auto 50px;
+	width: 160px;
+	height: 160px;
+	padding: 3px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+#info .portrait img {
+	width: 100%;
+	height: 100%;
+	background:url(../img/3r.jpg) no-repeat center;
+	background-size: cover;
+	border-radius: 50%;
+}
+#info .experience {
+	background-color: rgba(52,224,170,.6);
+}
+#info .interest {
+	background-color: rgba(106,170,224,.6);
+}
+#info .interest dl {
+	margin: 50px auto;
+}
+#info .skill {
+	background-color: rgba(38,117,110,.6);
+}
+#info .skill dt,
+#info .describe dt {
+	color: #fff;
+	margin: 0 auto 50px;
+}
+#info .describe {
+	background-color: rgba(69,41,210,.6);
+}
+.describe p {
+	padding: 10px 5px;
+	text-indent: 2em;
+	text-align: left;
+}
+#info .add {
+	background-color: rgba(43,184,123,.6);
+	
+}
+#info .add dt {
+	font-size: 36px;
+	/*color: #ddd;*/
+	/*text-align: left;*/
+}
+#info .add dd{
+	/*font-size: 26px;*/
+	/*background-color: transparent;*/
+	/*text-align: left;*/
+}
+#info .add dd a {
+	font-size: inherit;
+	color: inherit;
+}
+.add .cell {
+	position: relative;
+}
+.addTitle {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 60px;
+	font-size: 50px;
+	color: #ccc;
+	text-shadow: 0 0 3px #fff;
+}
